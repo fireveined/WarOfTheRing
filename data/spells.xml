@@ -1,0 +1,92 @@
+﻿<resources>
+
+
+
+		<herofile name="spell1">
+<name>Piorun</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>20</cost>
+<icon>0</icon>
+<target>all</target>
+<aoe>300</aoe>
+<aim>unit</aim>
+<effect_file>explosion_effect</effect_file>
+<buff_effect_file>ignite_effect_loop</buff_effect_file>
+
+ <stat name="dmg_percent" value="-150"/>
+ <stat name="dmg_instant" value="-110"/>
+ 
+ <stat name="buff_movement_speed" value="150"/>
+  <stat name="buff_time" value="3"/>
+
+ 
+ 
+  <stat name="cooldown" value="1"/>
+
+ 
+</herofile>
+		
+		<herofile name="spell2">
+<name>Napierdol</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>20</cost>
+<icon>1</icon>
+<target>all</target>
+<aoe>80</aoe>
+<effect_file>explosion_effect</effect_file>
+<aim>all</aim>
+
+ <stat name="dmg_percent" value="50"/>
+ <stat name="dmg_instant" value="10"/>
+
+  <stat name="cooldown" value="10"/>
+</herofile>
+
+		<herofile name="spell3">
+<name>Leczenie</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>20</cost>
+<icon>2</icon>
+<target>ally</target>
+<aoe>220</aoe>
+<aim>all</aim>
+
+ <stat name="dmg_percent" value="-50"/>
+ <stat name="dmg_instant" value="-10"/>
+  <stat name="one_effect" value="1/"/>
+  <stat name="cooldown" value="8"/>
+  
+<effect_file>explosion_effect</effect_file>
+</herofile>
+
+
+
+
+
+  <sprite name="explosion_effect">
+		<image file="gfx/effects/explosion.png">
+			<grid pos="0,0" size="64,64" array="4,4" />
+		</image>
+		<animation loop="no" />
+	</sprite>
+	
+	  <sprite name="explosion_effect_loop">
+		<image file="gfx/effects/explosion.png">
+			<grid pos="0,0" size="64,64" array="4,4" />
+		</image>
+		<animation loop="yes" />
+	</sprite>
+	
+
+	
+	  	  <sprite name="ignite_effect_loop">
+		<image file="gfx/effects/ignite.png">
+			<grid pos="0,0" size="40,40" array="3,3" />
+		</image>
+			<animation loop="yes" />
+	</sprite>
+	
+	
+	</resources>
+	
+	

@@ -1,0 +1,83 @@
+﻿name: Rohan	
+color: 30 140 30
+
+		unit: "Wojownik"
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseCount: 50
+			trainingTime: 3
+			baseMorale: 50
+
+			costFood: 25
+			costGold: 5
+
+		}
+
+		unit: "Łucznik"
+		{
+			describe: "Podstawowa jednostka do walki na odległość. Brak zbroi powoduje, że łucznik jest jedną z najszybszych jednostek w grze, ale zarazem czyni go bezużytecznym w walce wręcz. Daleki zasięg strzał łucznika to niepodważalny atut, lecz swą użyteczność wykazuje przede wszystkim przeciwko oddziałom bez metalowej zbroi."
+			type: archer
+			tier: 1
+			baseCount: 30
+			trainingTime: 7
+			baseMorale: 70
+
+			costIron: 5
+			costGold: 20
+		}
+		
+		
+				unit: "Wojownik"
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseCount: 50
+			trainingTime: 6
+			baseMorale: 70
+
+			costFood: 25
+			costGold: 59
+			costIron: 120
+			costTimber: 950
+		}
+		
+		
+		
+				unit: "Gwardia przyboczna"
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseCount: 50
+			trainingTime: 9
+			baseMorale: 80
+		}
+		
+		
+				unit: "Wojownik"
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseCount: 20
+			trainingTime: 12
+			baseMorale: 90
+		}
+		
+		
+		
+				unit: "Wojownik"
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 3
+			baseCount: 10
+			trainingTime: 15
+			baseMorale: 90
+		}
+		
+
+	

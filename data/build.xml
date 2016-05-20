@@ -1,0 +1,53 @@
+﻿<resources>
+
+
+
+		<herofile name="build1">
+<name>Koszary</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>20</cost>
+<time>10</time> 
+<type>barrack</type>
+<value>30</value>
+<hp>13</hp>
+</herofile>
+		
+				<herofile name="build2">
+<name>Farma</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>20</cost>
+<time>5</time> 
+<type>farm</type>
+<value>30</value>
+<hp>7</hp>
+</herofile>
+
+		<herofile name="build3">
+<name>Warownia</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>30</cost>
+<time>10</time> 
+<value>0</value>
+<type>castle</type>
+<hp>30</hp>
+</herofile>
+
+		<herofile name="build4">
+<name>Kosciol</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>30</cost>
+<time>3</time> 
+<type>temple</type>
+</herofile>
+	 
+	 		<herofile name="build5">
+<name>Zbrojownia</name>
+<describe>Koszary to miejsce gdzie możesz szkolić wojowników i wydawać im rozkazy.</describe>
+<cost>30</cost>
+<time>15</time> 
+<type>armory</type>
+</herofile>
+
+	</resources>
+	
+	

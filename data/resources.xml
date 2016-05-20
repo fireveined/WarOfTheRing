@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<resources>
+	  
+<font name="tooltip">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="15" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="tooltip_bold">
+    <ttf file="fonts/arialb.ttf" typeface="Arial Black" height="13" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+
+<font name="guifont">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="14" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="guifont_bold">
+    <ttf file="fonts/arialb.ttf" typeface="Arial Black" height="13" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+
+<font name="guifont_big">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="15" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="guifont_big_bold">
+    <ttf file="fonts/arialb.ttf" typeface="Arial Black" height="14" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="small_font">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="13" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="h2_font">
+    <ttf file="fonts/Neuropol.ttf" typeface="Neuropol" height="19" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+
+<font name="h3_fontb">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="16" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="h3_font">
+    <ttf file="fonts/Calibri.ttf" typeface="Calibri" height="13" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+
+
+<font name="h1">
+    <ttf file="fonts/lotr.TTF" typeface="Ringbearer" height="16" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+<font name="h1_bold">
+    <ttf file="fonts/lotr.TTF" typeface="Ringbearer" height="18" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+
+<font name="sf_font_26">
+    <ttf file="fonts/terminator.ttf" typeface="Terminator Real NFI" height="21" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+
+  	 <font name="sf_font_25">
+    <ttf file="fonts/verdanab.ttf" typeface="Verdana" height="22" average_width="0" anti_alias="true" subpixel="false"/>
+</font>
+  
+      <image name="gui_themes"> <image file="gfx/gui/gui.png" /> </image>
+	   <image name="gui_hud"> <image file="gfx/gui/hud.png" /> </image>
+	  <image name="gui_atlas"> <image file="gfx/gui/gui_atlas.png" /> </image>
+	  
+	      <image name="map_big"> <image file="map/third_age_map.png" /> </image>
+		  	      <image name="region_map"> <image file="map/region_map.png" /> </image>
+			  
+			   <image name="resources_image"> <image file="map/res.png" /> </image>
+			   <image name="flags"> <image file="gfx/flags.png" /> </image>
+			   
+	      <image name="background_universe_game"> <image file="gfx/backgrounds/stardust.jpg" /> </image>
+		  
+		       <image name="background_stars"> <image file="gfx/backgrounds/stars.png" /> </image>
+			      <image name="background_stars2"> <image file="gfx/backgrounds/stars2.png" /> </image>
+				  
+			       <image name="village"> <image file="gfx/village.png" /> </image>
+					<image name="units"> <image file="gfx/units.png" /> </image>
+					<image name="icons"> <image file="gfx/icons.png" /> </image>
+					
+		<image name="designs"> <image file="gfx/designs.png" /> </image>
+		
+	         <image name="cursor_normal"> <image file="gfx/cursors/cursor_normal.png" /> </image>
+			 <image name="cursor_edit"> <image file="gfx/cursors/cursor_edit.png" /> </image>
+			 <image name="cursor_action"> <image file="gfx/cursors/cursor_action.png" /> </image>
+			 
+			 <image name="map_images"> <image file="map/images.png" /> </image>
+			 
+	  	  <sprite name="move_effect">
+		<image file="gfx/effects/move.png"> <grid pos="0,0" size="32,32" array="1,1" /></image>
+	</sprite>
+	
+	
+		  	  <sprite name="explosion_effect">
+		<image file="gfx/effects/explosion.png"> <grid pos="0,0" size="64,64" array="4,4" /></image>
+	</sprite>
+	
+</resources>
+

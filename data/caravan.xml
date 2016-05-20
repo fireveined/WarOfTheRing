@@ -1,0 +1,27 @@
+﻿<resources>
+
+
+	  	  <sprite name="caravan_sprite">
+		<image file="gfx/caravan.png">
+			<grid pos="0,0" size="20,20" array="2,1" />
+		</image>
+	</sprite>
+	
+	
+ <hero name="caravan">
+ 
+ 
+ 
+ <stat name="max_hp" value="15"/>
+    <stat name="type" value="0"/>
+  <stat name="max_mana" value="20"/>
+ <stat name="mana" value="20"/>
+ 
+  <stat name="movement_speed" value="30"/>
+  
+	  </hero>
+	 
+	 
+	</resources>
+	
+	

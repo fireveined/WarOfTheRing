@@ -1,0 +1,58 @@
+name: Isengard	
+color: 255 255 255
+		unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseSize: 50
+		}
+
+		unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseSize: 50
+		}
+		
+		
+				unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseSize: 50
+		}
+		
+		
+		
+				unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseSize: 50
+		}
+		
+		
+				unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 1
+			baseSize: 20
+		}
+		
+		
+		
+				unit: Wojownik
+		{
+			describe: "Wojownicy to lekka piechota."
+			type: sword
+			tier: 3
+			baseSize: 10
+		}
+		
+
+	

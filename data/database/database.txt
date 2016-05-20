@@ -1,0 +1,7 @@
+nation-file: barbarians.txt
+nation-file: rohan.txt
+nation-file: gondor.txt
+nation-file: isengard.txt
+nation-file: mordor.txt
+ 
+ 

@@ -1,0 +1,26 @@
+﻿<resources>
+
+
+
+
+ <hero name="town">
+ 
+  <stat name="income" value="6"/>
+ <stat name="tax_time" value="5"/>
+   <stat name="type" value="1"/>
+  <stat name="slots" value="7"/>
+  
+   <stat name="size" value="60"/>
+  <stat name="max_mana" value="20"/>
+ <stat name="mana" value="20"/>
+
+  <stat name="movement_speed" value="520"/>
+  
+  	    <stat name="hp" value="200"/>
+		
+	  </hero>
+	 
+	 
+	</resources>
+	
+	

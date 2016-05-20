@@ -1,0 +1,32 @@
+﻿<resources>
+
+
+	  	  <sprite name="warrior_sprite">
+		<image file="gfx/warrior.png">
+			<grid pos="0,0" size="20,20" array="2,1" />
+		</image>
+	</sprite>
+	
+	
+ <hero name="warrior">
+ 
+  <stat name="max_hp" value="25"/>
+  
+   <stat name="attack" value="20"/>
+   
+   
+    <stat name="type" value="0"/>
+  <stat name="income" value="15"/>
+ <stat name="tax_time" value="9"/>
+ <stat name="range" value="22"/>
+  <stat name="max_mana" value="20"/>
+ <stat name="mana" value="20"/>
+ 
+  <stat name="movement_speed" value="40"/>
+  
+	  </hero>
+	 
+	 
+	</resources>
+	
+	

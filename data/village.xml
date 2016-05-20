@@ -1,0 +1,29 @@
+﻿<resources>
+
+
+ <hero name="village">
+ 
+  <stat name="income" value="10"/>
+ <stat name="tax_time" value="12"/>
+ 
+  <stat name="max_mana" value="20"/>
+ <stat name="slots" value="5"/>
+ <stat name="size" value="40"/>
+  <stat name="movement_speed" value="520"/>
+   <stat name="type" value="1"/>
+	 
+	    <stat name="hp" value="100"/>
+		
+	  </hero>
+	 
+	 
+	 
+	 <herofile name="village_names">
+<names>Warszawa;Krakow;Starowa Góra;Rydzynki</names>
+</herofile>
+
+
+
+	</resources>
+	
+	
