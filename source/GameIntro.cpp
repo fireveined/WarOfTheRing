@@ -7,7 +7,7 @@ void CGameIntro::Init()
 
 void CGameIntro::Render()
 {
-  
+
 
 }
 

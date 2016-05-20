@@ -12,13 +12,13 @@
 
 void CGameOptions::Init()
 {
-	GUI=new CGUIContainer("options_menu");
+	GUI = new CGUIContainer("options_menu");
 	CGUIManager::GetGUIManager()->addChild(GUI);
 	GUI->setVisible(0);
 	GUI->setTheme(sTheme("default_theme"));
 
 
-		GUI->addChild(new CGUISlider("campaign3", Point(90,100), 167));
+	GUI->addChild(new CGUISlider("campaign3", Point(90, 100), 167));
 }
 
 void CGameOptions::Render()
@@ -44,8 +44,8 @@ void CGameOptions::onInput(const InputEvent &event)
 
 void CGameOptions::Active()
 {
-	
-		GUI->setVisible(1);
+
+	GUI->setVisible(1);
 
 
 }
@@ -53,6 +53,6 @@ void CGameOptions::Active()
 void CGameOptions::Deactive()
 {
 
-		GUI->setVisible(0);
+	GUI->setVisible(0);
 }
 

@@ -15,21 +15,21 @@ class CFontManager
 
 protected:
 
-map<string, Font> Resources;
-static CFontManager *Manager;
+	map<string, Font> Resources;
+	static CFontManager *Manager;
 
 public:
 
-static CFontManager* GetFontManager()
-{
+	static CFontManager* GetFontManager()
+	{
 
-    if(Manager==0)Manager=new CFontManager();
-    return Manager;
-}
+		if (Manager == 0)Manager = new CFontManager();
+		return Manager;
+	}
 
-void AddFont(Font f, const std::string& name){Resources[name]=f;}
+	void AddFont(Font f, const std::string& name) { Resources[name] = f; }
 
-Font& zGetFont(const string& name);
+	Font& zGetFont(const string& name);
 
 
 };
@@ -41,22 +41,22 @@ class CImageManager
 
 protected:
 
-map<string, Image> Resources;
-static CImageManager *Manager;
+	map<string, Image> Resources;
+	static CImageManager *Manager;
 
 public:
 
-static CImageManager* GetImageManager()
-{
+	static CImageManager* GetImageManager()
+	{
 
-    if(Manager==0)Manager=new CImageManager();
-    return Manager;
-}
+		if (Manager == 0)Manager = new CImageManager();
+		return Manager;
+	}
 
-void zAddImage(Image f, const std::string& name){Resources[name]=f;}
+	void zAddImage(Image f, const std::string& name) { Resources[name] = f; }
 
-Image& zGetImage(const string& name);
- 
+	Image& zGetImage(const string& name);
+
 
 
 };
@@ -68,22 +68,22 @@ class CSpriteManager
 
 protected:
 
-map<string, Sprite> Resources;
-static CSpriteManager *Manager;
+	map<string, Sprite> Resources;
+	static CSpriteManager *Manager;
 
 public:
 
-static CSpriteManager* GetSpriteManager()
-{
+	static CSpriteManager* GetSpriteManager()
+	{
 
-    if(Manager==0)Manager=new CSpriteManager();
-    return Manager;
-}
+		if (Manager == 0)Manager = new CSpriteManager();
+		return Manager;
+	}
 
-void zAddImage(Sprite f, const std::string& name){Resources[name]=f;}
+	void zAddImage(Sprite f, const std::string& name) { Resources[name] = f; }
 
-Sprite& zGetImage(const string& name);
- 
+	Sprite& zGetImage(const string& name);
+
 
 
 };
@@ -94,22 +94,22 @@ class CTextureManager
 
 protected:
 
-map<string, Texture> Resources;
-static CTextureManager *Manager;
+	map<string, Texture> Resources;
+	static CTextureManager *Manager;
 
 public:
 
-static CTextureManager* GetTextureManager()
-{
+	static CTextureManager* GetTextureManager()
+	{
 
-    if(Manager==0)Manager=new CTextureManager();
-    return Manager;
-}
+		if (Manager == 0)Manager = new CTextureManager();
+		return Manager;
+	}
 
-void zAddTexture(Texture f, const std::string& name){Resources[name]=f;}
+	void zAddTexture(Texture f, const std::string& name) { Resources[name] = f; }
 
-Texture& zGetTexture(const string& name);
- 
+	Texture& zGetTexture(const string& name);
+
 
 
 };

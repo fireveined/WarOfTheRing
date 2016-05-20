@@ -19,21 +19,21 @@ using namespace clan;
 
 struct SDeviceOptions
 {
-    char ZBufDepth;
-    char ColorDepth;
-    bool Fullscreen;
-    int Width;
-    int Height;
-    char* WindowText;
+	char ZBufDepth;
+	char ColorDepth;
+	bool Fullscreen;
+	int Width;
+	int Height;
+	char* WindowText;
 };
 
 
 enum DEVICE_MODE
 {
-    DEVICE_STANDARD,
-    DEVICE_WINDOWED,
-    DEVICE_HARDCORE,
-    DEVICE_3D
+	DEVICE_STANDARD,
+	DEVICE_WINDOWED,
+	DEVICE_HARDCORE,
+	DEVICE_3D
 
 };
 
@@ -42,22 +42,22 @@ class CDevice
 {
 
 
-    bool IsRun;
-    void InitDevice();
+	bool IsRun;
+	void InitDevice();
 
-    static CDevice *Device;
+	static CDevice *Device;
 
-//CGameWindow* game;
- 
-			Canvas graphic;
-			InputContext input;
-ResourceManager resources;
+	//CGameWindow* game;
+
+	Canvas graphic;
+	InputContext input;
+	ResourceManager resources;
 
 	GUIManager gui_manager;
 
-DisplayWindow* window;
-    DEVICE_MODE Mode;
-GUIWindowManagerDirect wm;
+	DisplayWindow* window;
+	DEVICE_MODE Mode;
+	GUIWindowManagerDirect wm;
 
 
 	clan::GUIComponent *gui_window;
@@ -65,88 +65,81 @@ GUIWindowManagerDirect wm;
 
 	vector<CGameState*> GameStates;
 
-		float stepTime;
+	float stepTime;
 
 	bool Alive;
 public:
 
-void Run();
-string Cursorname;
-    static CDevice* GetDevice()
-    {
-        return Device;
-    }
+	void Run();
+	string Cursorname;
+	static CDevice* GetDevice()
+	{
+		return Device;
+	}
 
-	CDevice(){}
-    SDeviceOptions Options;
-	CGameState* GetGameState(eGameState g){return GameStates[(int)g];};
-	CGameState* GetActGameState(){return GameStates[CGameState::GetActState()];};
+	CDevice() {}
+	SDeviceOptions Options;
+	CGameState* GetGameState(eGameState g) { return GameStates[(int)g]; };
+	CGameState* GetActGameState() { return GameStates[CGameState::GetActState()]; };
 
-    int GetWidth()
-    {
-        return Options.Width;
-    }
+	int GetWidth()
+	{
+		return Options.Width;
+	}
 
-    int GetHeight()
-    {
-        return Options.Height;
-    }
+	int GetHeight()
+	{
+		return Options.Height;
+	}
 
-    CDevice(int x, int y, int col=32, int z=8, bool f=1, char* window="XEngine Window");
-    CDevice(DEVICE_MODE mode);
-    CDevice(SDeviceOptions options);
+	CDevice(int x, int y, int col = 32, int z = 8, bool f = 1, char* window = "XEngine Window");
+	CDevice(DEVICE_MODE mode);
+	CDevice(SDeviceOptions options);
 
-    bool DeviceRun();
-	void End(){Alive=0;}
-    void Begin()
-    {
+	bool DeviceRun();
+	void End() { Alive = 0; }
+	void Begin()
+	{
 		graphic.clear(Colorf::cadetblue);
-    }
+	}
 
-    void Flip()
-    {
-
-	// Make the stuff visible:
-			
-			
-KeepAlive::process();
- window->flip(0);
-				// Read messages from the windowing system message queue, if any are available:
-			
-
-    }
+	void Flip()
+	{
+		KeepAlive::process();
+		window->flip(0);
+	}
 
 	void SetCursor(string cur)
 	{
-		Cursorname=cur;
+		Cursorname = cur;
 	}
 
-    InputContext* GetInput()
+	InputContext* GetInput()
 	{
-    return &input;
-    }
+		return &input;
+	}
 
-   Canvas GetGraphic()
+	Canvas GetGraphic()
 	{
 
-    return graphic;
-    }
+		return graphic;
+	}
 
 	ResourceManager* GetResources()
-	{ 
+	{
 		return &resources;
 	}
 
 	GUIManager& GetGUIManager()
-	{ 
+	{
 		return gui_manager;
 	}
 
 	GUIComponent* GetGUIWindow()
-	{ 
+	{
 		return gui_window;
 	}
-	
+
 
 	double getDeltaTime()
 	{
@@ -168,8 +161,8 @@ extern bool keys2[200];
 
 
 
-extern double ScaleRatioX,ScaleRatioY;
-int SeparateText(vector<string> *Text,string &text, Font &f, int width);
+extern double ScaleRatioX, ScaleRatioY;
+int SeparateText(vector<string> *Text, string &text, Font &f, int width);
 
 #define GetGC() CDevice::GetDevice()->GetGraphic()
 #define GetRes() CDevice::GetDevice()->GetResources()
@@ -179,8 +172,8 @@ int SeparateText(vector<string> *Text,string &text, Font &f, int width);
 Size GetTextSize(std::string font, std::string text);
 void DrawTextCenter(std::string font, std::string text, int x, int y, Colorf color);
 
-void SeparateTextToChat(vector<string> *Text,string &text, Font &f, int width);
-void DrawTexture(Canvas &gc, const Rectf &rect, const Colorf &color = Colorf::white, const Rectf &texture_unit1_coords = Rectf(0.0f,0.0f,1.0f,1.0f));
+void SeparateTextToChat(vector<string> *Text, string &text, Font &f, int width);
+void DrawTexture(Canvas &gc, const Rectf &rect, const Colorf &color = Colorf::white, const Rectf &texture_unit1_coords = Rectf(0.0f, 0.0f, 1.0f, 1.0f));
 Size getScreenSize();
 double getDeltaTime();
 #endif

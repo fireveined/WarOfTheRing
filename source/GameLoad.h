@@ -12,26 +12,26 @@
 class CGameLoad : public CGameState
 {
 
-    CTimer Timer;
+	CTimer Timer;
 
 public:
 
 
 
-    CGameLoad() {}
+	CGameLoad() {}
 
-    void Render();
-    void Init();
-	    void Update();
-		
-void Active();
-void Deactive();
+	void Render();
+	void Init();
+	void Update();
 
-	void onClick(CGUIComponent* c, int key){};
-	void onHover(CGUIComponent* c, int key){};
-	void onPress(CGUIComponent* c, int key){};
+	void Active();
+	void Deactive();
 
- void onInput(const InputEvent &event);
+	void onClick(CGUIComponent* c, int key) {};
+	void onHover(CGUIComponent* c, int key) {};
+	void onPress(CGUIComponent* c, int key) {};
+
+	void onInput(const InputEvent &event);
 };
 
 

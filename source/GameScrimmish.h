@@ -12,26 +12,26 @@
 class CGameScrimmish : public CGameState
 {
 
-    CTimer Timer;
+	CTimer Timer;
 
 public:
 
 
 
-    CGameScrimmish() {}
+	CGameScrimmish() {}
 
-    void Render();
-    void Init();
-	    void Update();
-		
-void Active();
-void Deactive();
+	void Render();
+	void Init();
+	void Update();
+
+	void Active();
+	void Deactive();
 
 	void onClick(CGUIComponent* c, int key);
-	void onHover(CGUIComponent* c, int key){};
-	void onPress(CGUIComponent* c, int key){};
+	void onHover(CGUIComponent* c, int key) {};
+	void onPress(CGUIComponent* c, int key) {};
 
- void onInput(const InputEvent &event);
+	void onInput(const InputEvent &event);
 };
 
 

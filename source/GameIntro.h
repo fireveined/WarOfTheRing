@@ -8,14 +8,14 @@
 class CGameIntro : public CGameState
 {
 
-    CTimer Timer;
+	CTimer Timer;
 
 public:
-    CGameIntro() {}
-    void Render();
-    void Init();
-void Active();
-void Deactive();
+	CGameIntro() {}
+	void Render();
+	void Init();
+	void Active();
+	void Deactive();
 
 };
 

@@ -13,13 +13,13 @@ class CHUD : public CGUIComponent
 
 	Rect panelRectScreen, describeRect, describeRectScreen, townOrderRect, armyRect, armyRectScreen;
 	Point gPos;
-float animTimer;
+	float animTimer;
 
-		int screen;
-		std::vector<string> leftVars;
-		std::vector<string> rightVars;
+	int screen;
+	std::vector<string> leftVars;
+	std::vector<string> rightVars;
 
-		int buildInQueue[3];
+	int buildInQueue[3];
 
 public:
 
@@ -44,12 +44,12 @@ public:
 struct sDate
 {
 	int hour, day, month, year;
-	sDate(){}
-	sDate(double t){init(t);}
-	
+	sDate() {}
+	sDate(double t) { init(t); }
+
 	void init(double time);
 
 	string get();
 	string diff(double time2);
-	static string getTime(double tim, bool onlynum=0);
+	static string getTime(double tim, bool onlynum = 0);
 };

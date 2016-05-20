@@ -40,21 +40,21 @@ protected:
 	bool selected;
 public:
 
-	string getObjectType(){return objectType;};
+	string getObjectType() { return objectType; };
 
 
-	float getStat(string s){return stats[s];}
-	void setStat(string s, float w){stats[s]=w;}
-	void addStat(string s, float w){stats[s]+=w;}
+	float getStat(string s) { return stats[s]; }
+	void setStat(string s, float w) { stats[s] = w; }
+	void addStat(string s, float w) { stats[s] += w; }
 
-	virtual bool isSelected(){return selected;};
-	void setSelected(bool s){selected=s;}
+	virtual bool isSelected() { return selected; };
+	void setSelected(bool s) { selected = s; }
 
 
-	CObject(){}
+	CObject() {}
 
-	virtual	float getResIncome(eResType res){return 0;};
-	virtual float getResUse(eResType res){return 0;};
+	virtual	float getResIncome(eResType res) { return 0; };
+	virtual float getResUse(eResType res) { return 0; };
 };
 
 

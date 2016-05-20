@@ -15,27 +15,27 @@
 class CGameMenu : public CGameState
 {
 
-    CTimer Timer;
+	CTimer Timer;
 
 public:
 
 
-    CGameMenu() {}
+	CGameMenu() {}
 
-    void Render();
-    void Init();
-	    void Update();
-		
-			void onClick(CGUIComponent* c, int key);
-	void onHover(CGUIComponent* c,  int  key){};
-	void onPress(CGUIComponent* c,  int  key){};
+	void Render();
+	void Init();
+	void Update();
 
-void Active();
-void Deactive();
-void PlayButtonFunc();
-void OptionsButtonFunc();
-void ExitButtonFunc();
- void onInput(const InputEvent &event);
+	void onClick(CGUIComponent* c, int key);
+	void onHover(CGUIComponent* c, int  key) {};
+	void onPress(CGUIComponent* c, int  key) {};
+
+	void Active();
+	void Deactive();
+	void PlayButtonFunc();
+	void OptionsButtonFunc();
+	void ExitButtonFunc();
+	void onInput(const InputEvent &event);
 };
 
 

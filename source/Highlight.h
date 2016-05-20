@@ -14,7 +14,7 @@ using namespace clan;
 enum eHighlightType
 {
 	radius,
-	image, 
+	image,
 	rect
 };
 
@@ -32,15 +32,15 @@ public:
 
 	Colorf color;
 
-	sHighlight(){anim=0;}
-	sHighlight(Point p, int rad){init(p,rad);};
-	sHighlight(Rect rec){init(rec);};
-	sHighlight(std::string& img, Rect rec){init(img, rec);};
+	sHighlight() { anim = 0; }
+	sHighlight(Point p, int rad) { init(p, rad); };
+	sHighlight(Rect rec) { init(rec); };
+	sHighlight(std::string& img, Rect rec) { init(img, rec); };
 
 	bool init();
-	bool init(Point p, int rad, Colorf col=Colorf(255,255,255, 40));
-	bool init(Rect rec, Colorf col=Colorf(255,255,255, 40));
-	bool init(std::string& img, Rect rec, Colorf col=Colorf(255,255,255, 40));
+	bool init(Point p, int rad, Colorf col = Colorf(255, 255, 255, 40));
+	bool init(Rect rec, Colorf col = Colorf(255, 255, 255, 40));
+	bool init(std::string& img, Rect rec, Colorf col = Colorf(255, 255, 255, 40));
 
 	bool update();
 
@@ -48,9 +48,9 @@ public:
 };
 
 
-	bool makeHighlight(Point p, int rad, Colorf col=Colorf(255,255,255, 65));
-	bool makeHighlight(Rect rec, Colorf col=Colorf(255,255,255, 25));
-	bool makeHighlight(std::string& img, Rect rec, Colorf col=Colorf(255,255,255, 25));
+bool makeHighlight(Point p, int rad, Colorf col = Colorf(255, 255, 255, 65));
+bool makeHighlight(Rect rec, Colorf col = Colorf(255, 255, 255, 25));
+bool makeHighlight(std::string& img, Rect rec, Colorf col = Colorf(255, 255, 255, 25));
 
-	//bool makeInterval(float sec);
+//bool makeInterval(float sec);
 #endif

@@ -11,7 +11,7 @@
 
 void CGameCampaign::Init()
 {
-	
+
 }
 
 void CGameCampaign::Render()
@@ -37,7 +37,7 @@ void CGameCampaign::onInput(const InputEvent &event)
 
 void CGameCampaign::Active()
 {
-	
+
 
 
 

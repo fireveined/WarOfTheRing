@@ -23,21 +23,21 @@ enum eUnitType
 class CUnit : public CObject
 {
 
-	
+
 
 
 
 public:
 
 	float costs[(int)RES_ALL_NUM];
-int icon, nation;
+	int icon, nation;
 	string unitTemplate, name, describe;
 	eUnitType unitType;
 	CUnit(string temp);
 
-	CUnit(){}
+	CUnit() {}
 
-	const string& getTemplate(){return unitTemplate;}
+	const string& getTemplate() { return unitTemplate; }
 
 	Rect getIconImage();
 
@@ -46,11 +46,11 @@ int icon, nation;
 	static CUnit getUnit(int nation, int id);
 	int getStrength();
 
-	int getType(){return nation*6+icon;}
+	int getType() { return nation * 6 + icon; }
 
 	string getUnitTypeString()
 	{
-		string types[4]={"Strzelec", "Pikeman", "Swordsman", "Cavalaryman" };
+		string types[4] = { "Strzelec", "Pikeman", "Swordsman", "Cavalaryman" };
 		return types[(int)unitType];
 	}
 };
